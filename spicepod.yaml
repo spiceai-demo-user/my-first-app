@@ -1,3 +1,53 @@
-name: my-spicepod
+name: my-first-app
 kind: Spicepod
 version: v1beta1
+
+datasets:   
+  - from: s3://spiceai-demo-datasets/tpch/customer/
+    name: tpch.customer
+    description: TPC-H benchmark customer dataset.
+    params:
+      file_format: parquet
+      
+  - from: s3://spiceai-demo-datasets/tpch/lineitem/
+    name: tpch.lineitem
+    description: TPC-H benchmark lineitem dataset.
+    params:
+      file_format: parquet
+      
+  - from: s3://spiceai-demo-datasets/tpch/nation/
+    name: tpch.nation
+    description: TPC-H benchmark nation dataset.
+    params:
+      file_format: parquet
+      
+  - from: s3://spiceai-demo-datasets/tpch/orders/
+    name: tpch.orders
+    description: TPC-H benchmark orders dataset.
+    params:
+      file_format: parquet
+      
+  - from: s3://spiceai-demo-datasets/tpch/part/
+    name: tpch.part
+    description: TPC-H benchmark part dataset.
+    params:
+      file_format: parquet
+      
+  - from: s3://spiceai-demo-datasets/tpch/partsupp/
+    name: tpch.partsupp
+    description: TPC-H benchmark partsupp dataset.
+    params:
+      file_format: parquet
+      
+  - from: s3://spiceai-demo-datasets/tpch/region/
+    name: tpch.region
+    description: TPC-H benchmark region dataset.
+    params:
+      file_format: parquet
+      
+  - from: s3://spiceai-demo-datasets/tpch/supplier/
+    name: tpch.supplier
+    description: TPC-H benchmark supplier dataset.
+    params:
+      file_format: parquet
+    
